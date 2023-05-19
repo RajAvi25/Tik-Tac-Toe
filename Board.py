@@ -1,5 +1,6 @@
 import os
 import numpy as np
+from MinMaxAlgorithm import *
 
 os.system("cls")
 
@@ -78,6 +79,7 @@ class Board():
             return False
         
     def moveAI(self,player):
+        _,updated_values=minimax(self,2,player)
         print(player,"works")
-        return self.values
+        return updated_values
         

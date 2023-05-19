@@ -1,5 +1,5 @@
 from Board import *
-board = Board()
+# board = Board()
 
 def minimax(board, depth, maximizingPlayer):
     node = board.values

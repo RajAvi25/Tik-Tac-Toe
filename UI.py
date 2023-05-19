@@ -80,7 +80,9 @@ while True:
                 mouse_pos = pygame.mouse.get_pos()
                 checkClickPosition(mouse_pos, player)
                 if isAIPlaying:
-                    board.moveAI(player)
+                    move = board.moveAI(player)
+                    # idxChange = board.values -move
+                    # board.updateboard(idxChange,player)
                 player = not player
 
     # Draw the circle or cross image on the clicked tile positions
